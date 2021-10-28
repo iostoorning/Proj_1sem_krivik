@@ -1,5 +1,6 @@
 
 while True:
+    # Обработка исключений
     try:
         N = int(input("Введите первое число "))
         K = int(input("Введите второе число "))
@@ -8,6 +9,7 @@ while True:
             print("Резуьтат равен ", result)
             print("Остаток равен", K)
         else:
+            # Цикл с процессом деления
             while not N < K:
                 N -= K
                 result += 1
