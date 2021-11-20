@@ -1,5 +1,10 @@
 while True:
     try:
-        a = str(input("Введите символы"))
+        a = 0
         def charnumber(x):
-            local_number = x
+            x = len(input("Введите символы "))
+            print(x)
+        charnumber(a)
+        break
+    except ValueError:
+        print("Ошибка значения! Введите символы")
