@@ -11,27 +11,8 @@ minpears = 0
 minapples = 0
 
 def min_sales() :
-    i = 1
-    for i in pears:
-        y = pears[i]
-        if y <= pears[i]:
-            continue
-        else:
-            y = pears[i]
-        i += 1
-        y = minpears
-        return i
-    for i in apples:
-        y = apples[i]
-        if y <= apples[i]:
-            continue
-        else:
-            y = apples[i]
-        i += 1
-        y = minapples
-        return i
-    print('Минимальные продажи груш = ', minpears)
-    print('Минимальные продажи яблок = ', minapples)
 
+    print('Минимальные продажи груш = ', min(pears.values()))
+    print('Минимальные продажи яблок = ', min(apples.values()))
 
 min_sales()
