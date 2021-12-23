@@ -3,7 +3,7 @@
 # нет — вывести 0.
 while True:
     try:
-        x = input("Введите список чисел через пробел: ")
+        x = input("Введите список чисел через запятую без пробела: ")
         x.split()
         NList = list(x)
         y = float(NList[2]) / float(NList[0])
@@ -11,9 +11,11 @@ while True:
             if y == float(NList[i + 2]) / float(NList[2]):
                 continue
             else:
-                q = 0
+                y = 0
                 break
         print(y)
         break
     except TypeError:
+        print("Ошибка значения! Вводите числа")
+    except ValueError:
         print("Ошибка значения! Вводите числа")
