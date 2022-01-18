@@ -11,6 +11,9 @@ def d3():
         if int(numbers[int(i)]) % 3 == 0:
             print("Числа, кратные 3: ", numbers[int(i)])
     for d in range(len(numbers) - 1):
-        x += int(numbers[int(d)]) * int(numbers[int(d+1)])
-    print("Произведение эл-ов: ",x)
+        x += int(numbers[int(d)]) * int(numbers[int(d + 1)])
+    print("Произведение эл-ов: ", x)
     print(min(numbers))
+
+
+d3()
