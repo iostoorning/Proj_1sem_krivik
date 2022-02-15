@@ -7,12 +7,11 @@ print(x)
 x = x.split()
 pears = {1: x[1], 2: x[2], 3: x[3], 4: x[4], 5: x[5]}
 apples = {1: x[7], 2: x[8], 3: x[9], 4: x[10], 5: x[11]}
-minpears = 0
-minapples = 0
 
-def min_sales() :
 
+def min_sales():
     print('Минимальные продажи груш = ', min(pears.values()))
     print('Минимальные продажи яблок = ', min(apples.values()))
+
 
 min_sales()
